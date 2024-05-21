@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de dados básicos</title>
+	<style>
+       body {
+		background: rgba(206, 206, 206, 0.692);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            padding: 8px 12px;
+            border: 1px solid #ff0000;
+            background-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .genero {
+            margin-bottom: 20px;
+        }
+        .genero label {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .estcol label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .estcol select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+		
+    </style>
+</head>
+<body>
+	<h1>Cadastro básico de dados para emprego</h1>
+	<form action="#" method="post">
+		<label for="nome">Nome: </label>
+		<input type="text" id="nome" name="nome">
+		
+		<label for="idade">Idade: </label>
+		<input type="text" id="idade" name="idade">
+		
+		<label for="estado">Estado: </label>
+		<input type="text" id="estado" name="estado">
+		
+		<label for="cidade">Cidade: </label>
+		<input type="text" id="cidade" name="cidade>
+		
+		<div class="genero">
+		<br><br><label>Gênero: </label>
+		<input type="radio" id="masc" name="genero" value="masculino">
+		<label for="masc">Masculino</label>
+		<input type="radio" id="fem" name="genero" value="feminino">
+		<label for="fem">Feminino</label>
+		<input type="radio" id="naodizer" name="genero" value="naodizer">
+		<label for="naodizer">Prefiro não dizer</label>
+		<input type="radio" id="outros" name="genero" value="outros">
+		<label for="outros">Outros</label>
+		</div>
+		
+		<br><br><div class="estcol">
+		<label for="estcivil">Estado Civil:</label>
+		<select id="estcivil" name="estcivil">
+			<option value="solteiro">Solteiro(a)</option>
+			<option value="casado">Casado(a)</option>
+			<option value="divorciado">Divorciado(a)</option>
+			<option value="viuvo">Viúvo(a)</option>
+		</select>
+		
+		<label for="escolaridade">Escolaridade:</label>
+		<select id="escolaridade" name="escolaridade">
+			<option value="fundamental">Ensino Fundamental</option>
+			<option value="medio">Ensino Médio</option>
+			<option value="superior">Ensino Superior</option>
+		</select>
+		<label for="pretensao">Qual sua pretensão salarial?</label>
+		<select id="pretensao" name="pretensao">
+			<option value="baixo">Até R$1.000,00</option>
+			<option value="medio">Entre R$1.000,00 e R$2.000,00</option>
+			<option value="alto">Acima de R$2.000,00</option>
+		</select>
+		</div>
+		
+		<br><label><strong>Já trabalhou antes?</strong></label>
+		<input type="checkbox" id="carteira" name="carteira" value="carteira">
+		<label for="carteira">Sim, de carteira assinada</label>
+		<input type="checkbox" id="inf" name="inf" value="inf">
+		<label for="informal">Sim, trabalhava informalmente</label>
+		<input type="checkbox" id="nao" name="nao" value="nao">
+		<label for="nao">Não, nunca trabalhei</label>
+		<br>
+		
+		<br><p><strong>Escreva aqui informações complementares, como: cursos, certificações, experiências anteriores e etc.</strong><br><br><textarea name="tMsg" id="cMsg" cols="105" rows="25" placeholder="Escreva nesse campo vazio"></textarea></p>
+		
+		<button type="submit">Enviar</button>
+		
+</body>
+</html>
